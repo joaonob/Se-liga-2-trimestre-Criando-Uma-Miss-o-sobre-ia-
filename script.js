@@ -6,71 +6,85 @@ const textoResultado = document.querySelector(".texto-resultado");
 
 const perguntas = [
     {
-        enunciado: "Quando você começa um novo projeto de programação, qual é a sua abordagem inicial?",
+        enunciado: "Como você costuma acompanhar o jogo do seu time?",
         alternativas: [
             {
-                texto: "Planejo todos os detalhes antes de começar a programar.",
-                afirmacao: "<b>Organização</b> é uma das suas principais características. Você gosta de planejar antes de agir."
+                texto: "Assisto ao jogo inteiro e fico atento a cada lance.",
+                afirmacao: "<b>Torcedor fanático</b> é o seu estilo! Você acompanha cada detalhe e não perde uma partida."
             },
             {
-                texto: "Começo a programar e vou ajustando minhas ideias durante o projeto.",
-                afirmacao: "<b>Flexibilidade</b> combina com você. Você prefere aprender e adaptar suas ideias durante o desenvolvimento."
+                texto: "Assisto quando posso e acompanho os principais momentos.",
+                afirmacao: "<b>Torcedor tranquilo</b> combina com você. Você gosta de futebol, mas sem deixar de lado outras coisas."
             }
         ]
     },
 
     {
-        enunciado: "Como você costuma resolver um problema ou bug no seu código?",
+        enunciado: "O que você faz quando seu time marca um gol?",
         alternativas: [
             {
-                texto: "Pesquiso bastante e tento encontrar a solução por conta própria.",
-                afirmacao: "<b>Autonomia</b> é um dos seus pontos fortes. Você gosta de investigar e encontrar suas próprias soluções."
+                texto: "Comemoro muito, grito e faço a festa!",
+                afirmacao: "<b>Torcedor apaixonado</b>! Para você, gol é motivo para muita comemoração."
             },
             {
-                texto: "Procuro ajuda de colegas, professores ou comunidades de programação.",
-                afirmacao: "<b>Colaboração</b> faz parte do seu perfil. Você valoriza a troca de experiências e conhecimentos."
+                texto: "Comemoro, mas tento manter a calma.",
+                afirmacao: "<b>Torcedor equilibrado</b>! Você comemora, mas consegue controlar a emoção."
             }
         ]
     },
 
     {
-        enunciado: "Em um projeto, o que você considera mais importante?",
+        enunciado: "Seu time está perdendo por 1 a 0. O que você faz?",
         alternativas: [
             {
-                texto: "Que o sistema funcione corretamente e seja eficiente.",
-                afirmacao: "<b>Praticidade</b> define seu perfil. Para você, um bom projeto precisa funcionar bem."
+                texto: "Continuo acreditando até o último minuto.",
+                afirmacao: "<b>Torcedor fiel</b>! Você nunca abandona seu time, mesmo nos momentos difíceis."
             },
             {
-                texto: "Que o projeto tenha uma aparência bonita e uma boa experiência para o usuário.",
-                afirmacao: "<b>Criatividade</b> é uma característica marcante sua. Você valoriza bastante o visual e a experiência do usuário."
+                texto: "Fico nervoso e começo a reclamar do time.",
+                afirmacao: "<b>Torcedor exigente</b>! Você quer ver seu time sempre jogando bem e lutando pela vitória."
             }
         ]
     },
 
     {
-        enunciado: "Como você reage quando aparece uma tecnologia nova?",
+        enunciado: "Como você acompanha as notícias do seu time?",
         alternativas: [
             {
-                texto: "Prefiro aperfeiçoar aquilo que já conheço antes de mudar.",
-                afirmacao: "<b>Especialização</b> combina com você. Você prefere dominar bem suas ferramentas."
+                texto: "Procuro notícias, escalações, contratações e resultados todos os dias.",
+                afirmacao: "<b>Torcedor informado</b>! Você gosta de saber tudo o que acontece com seu time."
             },
             {
-                texto: "Fico curioso e quero testar a novidade imediatamente.",
-                afirmacao: "<b>Curiosidade</b> é uma característica muito forte sua. Você gosta de descobrir novas tecnologias."
+                texto: "Vejo as notícias principalmente nos dias de jogo.",
+                afirmacao: "<b>Torcedor casual</b>! Você acompanha seu time, mas não precisa saber de todas as novidades."
             }
         ]
     },
 
     {
-        enunciado: "Qual ambiente de trabalho combina mais com você?",
+        enunciado: "Quando seu time perde uma partida importante, como você reage?",
         alternativas: [
             {
-                texto: "Trabalhar sozinho e ter controle sobre todas as decisões.",
-                afirmacao: "<b>Independência</b> combina com você. Você gosta de liberdade para tomar suas próprias decisões."
+                texto: "Fico chateado, mas continuo apoiando o time.",
+                afirmacao: "<b>Torcedor fiel</b>! Para você, apoiar o time é importante principalmente nos momentos difíceis."
             },
             {
-                texto: "Trabalhar em equipe e dividir ideias e responsabilidades.",
-                afirmacao: "<b>Trabalho em equipe</b> é importante para você. Você gosta de construir projetos junto com outras pessoas."
+                texto: "Fico muito bravo e passo o resto do dia reclamando.",
+                afirmacao: "<b>Torcedor apaixonado</b>! Você vive intensamente cada resultado do seu time."
+            }
+        ]
+    },
+
+    {
+        enunciado: "Se pudesse assistir a uma partida do seu time em qualquer lugar, qual escolheria?",
+        alternativas: [
+            {
+                texto: "No estádio, junto com a torcida.",
+                afirmacao: "<b>Torcedor de arquibancada</b>! Você gosta da energia, dos cantos e da emoção de estar no estádio."
+            },
+            {
+                texto: "Em casa, com amigos e bastante comida.",
+                afirmacao: "<b>Torcedor de sofá</b>! Para você, assistir ao jogo em casa com amigos é uma ótima experiência."
             }
         ]
     }
@@ -122,7 +136,7 @@ function selecionarResposta(alternativaEscolhida) {
 
 function mostrarResultado() {
 
-    caixaPerguntas.textContent = "✨ Seu perfil de programador:";
+    caixaPerguntas.textContent = "⚽ Descobrimos que tipo de torcedor você é!";
 
     textoResultado.innerHTML = resultadoFinal;
 
